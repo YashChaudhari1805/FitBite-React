@@ -1,17 +1,18 @@
 import React from "react";
+import Logo from '../assets/logo.jpeg';
 
 function Header() {
     return (
         <>
             <div className="p-4 font-['Candara']">
-                <header className="w-full bg-blue-200 text-black py-1 shadow-md">
+                <header className="w-full bg-blue-200 text-black py-1 shadow-md rounded-xs">
                     <div>
                         <h1 className="text-center tracking-wide text-2">Embrace Serene Life</h1>
                     </div>
                 </header>
                 <div className="sticky navbar bg-base-100 shadow-md rounded-box  m-2">
                     <div className="navbar-start items-center">
-                        <img src="/vite.svg" alt="FitBite Logo" className="w-8 h-8" />
+                        <img src={Logo} alt="FitBite Logo" className="w-8 h-8 rounded-md shadow-2xl mx-1" />
                         <span className="text-2xl font-bold cursor-pointer tracking-wide">FitBite</span>
                     </div>
                     <div className="navbar-center">
@@ -24,8 +25,8 @@ function Header() {
                         </ul>
                     </div>
                     <div className="navbar-end gap-2 mx-2">
-                        <button className="btn btn-outline btn-primary bg">Login</button>
-                        <button className="btn btn-primary">Sign Up</button>
+                        <button className="btn btn-neutral btn-dash">Log In</button>
+                        <button className="btn btn-neutral btn-outline">Sign Up</button>
                     </div>
                 </div>
             </div>

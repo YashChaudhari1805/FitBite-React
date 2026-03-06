@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from '../assets/logo.jpeg';
 
 function Footer() {
     return (
@@ -6,7 +7,7 @@ function Footer() {
             <div className="p-4 font-['Candara']">
                 <footer className="footer sm:footer-horizontal text-base-content p-10 bg-blue-200 rounded-box mx-2">
                     <aside>
-                        <img className='w-30 h-30' src='./vite.svg' />
+                        <img className='w-30 h-30 rounded-box shadow-2xl' src={Logo} />
                         <p>
                             FitBite
                             <br />
