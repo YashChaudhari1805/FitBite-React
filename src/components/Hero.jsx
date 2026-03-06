@@ -5,7 +5,7 @@ function Hero() {
     return (
         <>
             <div className="p-4 font-['Candara'] mx-4">
-                <div className="hero min-h-screen bg-blue-200 shadow-md rounded-box">
+                <div className="hero h-150 bg-blue-200 shadow-md rounded-box">
                     <div className="hero-content flex-col lg:flex-row-reverse">
                         <img
                             src={HeroImage}
