@@ -10,7 +10,8 @@ function Footer() {
                     <p className="font-semibold">
                         FitBite
                         <br />
-                        <span className="font-normal text-sm">Empowering Healthy Lifestyle since 2026</span>
+                        <span className="font-normal text-sm">Empowering Healthy Lifestyle since 2026</span><br/>
+                        <span className="font-normal text-sm">A YK Chaudhari creation ❤️</span>
                     </p>
                 </aside>
                 <nav>
