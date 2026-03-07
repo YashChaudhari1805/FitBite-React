@@ -1,45 +1,44 @@
-# FitBite - Modern Fitness Platform
+# FitBite-React 
 
-FitBite is a responsive, frontend-focused React application built to serve as the landing page and user portal for a modern fitness and wellness platform. It features a clean, "floating UI" aesthetic using a soothing stone and blue color palette.
+FitBite is a modern, responsive fitness and nutrition platform built to help users embrace a serene and healthy lifestyle. This project is a complete rewrite of a legacy PHP-based application, focused on clean architecture, component reusability, and a superior developer experience using React.
 
 ## Tech Stack
 
-* **Framework:** React 18 (Bootstrapped with Vite)
-* **Styling:** Tailwind CSS + DaisyUI
-* **Components:** Functional React Components
-* **Icons:** SVG-based inline icons
-
-## Key Features
-
-* **Modern UI/UX:** A responsive, mobile-first design featuring floating containers, soft shadows, and a clean stone/blue color scheme.
-* **Dynamic Pricing Grid:** Reusable `<Card />` components that dynamically render pricing, popular badges, and feature checklists using React Props.
-* **Component-Driven Architecture:** Highly modular codebase separating the Header, Hero, Cards, and Footer logic for easy maintenance and scalability.
+* **Frontend:** React 19
+* **Build Tool:** Vite
+* **Styling:** Tailwind CSS 4 & DaisyUI 5
+* **Icons/UI Components:** DaisyUI (Navigation, Footers, Buttons)
+* **Fonts:** Candara
 
 ## Project Structure
 
-All primary working files are located in the `src/` directory:
+The project follows a modular component-based architecture to ensure the "inside" is as beautiful as the "outside":
 
-```text
-src/
-├── assets/            # Local images and branding (e.g., logo)
-├── components/        # Reusable React components
-│   ├── Card.jsx       # Dynamic pricing/feature card
-│   ├── Footer.jsx     # Site footer
-│   ├── Header.jsx     # Main navigation bar
-│   ├── Hero.jsx       # Landing page hero section
-│   └── Home.jsx       # Main landing page assembler
-├── App.jsx            # Root component and layout wrapper
-├── index.css          # Global Tailwind directives
-└── main.jsx           # React entry point
-```
+* **`Header.jsx`**: Features a sticky navigation bar with DaisyUI components and a promotional top banner.
+* **`Hero.jsx`**: An engaging introduction section using CSS mix-blending to integrate brand imagery seamlessly.
+* **`Home.jsx`**: The main landing page orchestrating the Hero section and a dynamic pricing grid.
+* **`Card.jsx`**: A reusable sub-component used for displaying fitness plans with conditional rendering for "Popular" highlights and feature availability.
+* **`Auth.jsx`**: A unified Login and Sign-Up component utilizing React's `useState` for smooth toggling between authentication modes.
+* **`Footer.jsx`**: A multi-column site footer organized by service, company, and legal categories.
 
-## How to install on Local System
+## Getting Started
+
+### Prerequisites
+* Node.js 
+* npm 
+### Installation
 1. Clone the repository:
-git clone [https://github.com/your-username/fitbite-react.git](https://github.com/YashChaudhari1805/fitbite-react.git)
-2. Navigate into the repository
-cd fitbite-react
-3. Install dependencies
-npm install
-4. Start developement server
-npm run dev
-5. Open your browser and visit http://localhost:5173
+   ```bash
+   git clone [https://github.com/yashchaudhari1805/fitbite-react.git](https://github.com/yashchaudhari1805/fitbite-react.git)
+2. Install Dependencies:
+   ```bash
+   npm i
+3. Start the Developement Server
+    ```bash
+    npm run dev
+    ```
+
+## Licence
+Made with ❤️ by YK Chaudhari in March of 2026
+
+
