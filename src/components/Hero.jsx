@@ -4,9 +4,9 @@ import HeroImage from '../assets/hero.jpg';
 function Hero() {
     return (
         <div className="font-['Candara'] px-6 py-4 w-full">
-            <div className="hero min-h-[500px] bg-blue-200 shadow-md rounded-2xl w-full">
+            <div className="hero min-h-160 bg-blue-200 shadow-md rounded-2xl w-full">
                 <div className="hero-content flex-col lg:flex-row gap-10 px-10 py-10 w-full">
-                    {/* Text side */}
+
                     <div className="flex-1">
                         <h1 className="text-5xl font-bold leading-tight">
                             Your One Stop Solution For Every Fitness Need!
@@ -19,7 +19,6 @@ function Hero() {
                         </button>
                     </div>
 
-                    {/* Image side */}
                     <div className="flex-1 flex justify-center">
                         <img
                             src={HeroImage}

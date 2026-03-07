@@ -5,7 +5,7 @@ import Home from './components/Home.jsx'
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col overflow-x-hidden bg-stone-200">
+    <div className="min-h-screen flex flex-col overflow-x-hidden bg-stone-300">
       <Header />
       <Home />
       <Footer />
