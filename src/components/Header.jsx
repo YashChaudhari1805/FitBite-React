@@ -4,7 +4,7 @@ import Logo from '../assets/logo.jpeg';
 function Header() {
     return (
         <div className="font-['Candara'] w-full">
-            <header className="w-full bg-blue-200 text-black py-1.5 shadow-sm">
+            <header className="w-full bg-blue-200 text-black py-1.5 shadow-lg">
                 <h1 className="text-center tracking-wide text-sm font-medium">Embrace Serene Life!</h1>
             </header>
 
