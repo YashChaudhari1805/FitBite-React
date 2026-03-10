@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroImage from '../assets/hero.png';
+import { Link } from 'react-router-dom';
 
 function Hero() {
     return (
@@ -14,18 +15,19 @@ function Hero() {
                         <p className="mt-4 text-lg text-gray-700">
                             Track your diet, follow expert workouts, and embrace a healthier lifestyle — all in one place.
                         </p>
-                        <button className="btn btn-neutral btn-outline mt-8 rounded-full px-8">
+                        <a href="#pricing" className="btn btn-neutral btn-outline mt-8 rounded-full px-8">
                             Get Started
-                        </button>
+                        </a>
                     </div>
 
                     <div className="flex-1 flex justify-center">
-                        <img
-                            src={HeroImage}
-                            alt="Fitness hero"
-                            // This single class blends the backgrounds perfectly!
-                            className="mix-blend-multiply" 
-                        />
+                        <Link to={"/"}>
+                            <img
+                                src={HeroImage}
+                                alt="Fitness hero"
+                                className="mix-blend-multiply"
+                            />
+                        </Link>
                     </div>
                 </div>
             </div>

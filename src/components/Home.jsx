@@ -7,13 +7,12 @@ function Home() {
         <div className="flex flex-col items-center">
             <Hero />
             
-            <div className="w-[95%] max-w-7xl mx-auto my-20 font-['Candara']">
+            <div id="pricing" className="w-[95%] max-w-7xl mx-auto my-20 font-['Candara']">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold text-black mb-4">Choose Your Fitness Journey</h2>
                     <p className="text-gray-600">Upgrade your plan to unlock personalized coaching and advanced tracking.</p>
                 </div>
 
-                {/* Grid to perfectly align the cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center items-stretch">
                     
                     <Card 

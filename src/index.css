@@ -1,2 +1,8 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
