@@ -39,6 +39,7 @@ The project follows a modular component-based architecture to ensure the "inside
     ```
 
 ## Licence
-Made with ❤️ by YK Chaudhari in March of 2026
+Made with ❤️ in Navi Mumbai
+Yash Chaudhari
 
 
