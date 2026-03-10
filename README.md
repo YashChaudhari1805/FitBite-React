@@ -40,6 +40,6 @@ The project follows a modular component-based architecture to ensure the "inside
 
 ## Licence
 Made with ❤️ in Navi Mumbai
-Yash Chaudhari
+## Yash Chaudhari
 
 
