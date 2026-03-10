@@ -14,6 +14,8 @@ FitBite is a modern, responsive fitness and nutrition platform built to help use
 
 The project follows a modular component-based architecture to ensure the "inside" is as beautiful as the "outside":
 
+* **`App.jsx`**: Acts as the main Layout wrapper, containing the Header, Footer, and an Outlet for dynamic page content.
+* **`main.jsx`**: Configures the createBrowserRouter with top-level sibling routes for the main app and the Auth page.
 * **`Header.jsx`**: Features a sticky navigation bar with DaisyUI components and a promotional top banner.
 * **`Hero.jsx`**: An engaging introduction section using CSS mix-blending to integrate brand imagery seamlessly.
 * **`Home.jsx`**: The main landing page orchestrating the Hero section and a dynamic pricing grid.
@@ -26,6 +28,7 @@ The project follows a modular component-based architecture to ensure the "inside
 ### Prerequisites
 * Node.js 
 * npm 
+* react-router-dom
 ### Installation
 1. Clone the repository:
    ```bash
