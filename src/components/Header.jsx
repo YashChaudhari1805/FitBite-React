@@ -23,6 +23,9 @@ function Header() {
                                 <NavLink to={'/'} className={({ isActive }) => `rounded-lg px-4 py-2 ${isActive ? "bg-blue-200" : "hover:bg-blue-100"}`}>Home</NavLink>
                             </li>
                             <li>
+                                <NavLink to={'profile'} className={({ isActive }) => `rounded-lg px-4 py-2 ${isActive ? "bg-blue-200" : "hover:bg-blue-100"}`}>Profile</NavLink>
+                            </li>
+                            <li>
                                 <NavLink to={'recipes'} className={({ isActive }) => `rounded-lg px-4 py-2 ${isActive ? "bg-blue-200" : "hover:bg-blue-100"}`}>Recipes</NavLink>
                             </li>
                             <li>
