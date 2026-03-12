@@ -8,6 +8,7 @@ import Auth from './components/Auth.jsx';
 import Hero from './components/Hero.jsx';
 import Profile from './components/Profile.jsx'
 import Recipes from './components/Recipes.jsx'
+import Workout from './components/Workout.jsx'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <>
@@ -16,7 +17,7 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path='hero' element={<Hero />} />
       <Route path='profile' element={<Profile />} />
       <Route path='recipes' element={<Recipes />} />
-      <Route path='workouts' element={<div>Coming Soon</div>} />
+      <Route path='workouts' element={<Workout />} />
       <Route path='about' element={<div>Coming Soon</div>} />
       <Route path='contact' element={<div>Coming Soon</div>} />
       <Route path='jobs' element={<div>Coming Soon</div>} />
