@@ -11,6 +11,7 @@ import Recipes from './components/Recipes.jsx'
 import Workout from './components/Workout.jsx'
 import Diet from './components/Diet.jsx'
 import About from './components/About.jsx'
+import NotFound from './components/NotFound.jsx'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <>
@@ -21,8 +22,8 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path='recipes' element={<Recipes />} />
       <Route path='workouts' element={<Workout />} />
       <Route path='about' element={<About />} />
-      <Route path='contact' element={<div>Coming Soon</div>} />
-      <Route path='jobs' element={<div>Coming Soon</div>} />
+      <Route path='*' element={<NotFound />} />
+      <Route path='*' element={<NotFound />} />
       <Route path='diet' element={<Diet />} />
     </Route>
     <Route path='/auth' element={<Auth />}></Route>
