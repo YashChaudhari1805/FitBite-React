@@ -3,7 +3,7 @@ import Logo from "../assets/logo.jpeg";
 
 function RecipeCard() {
     return (
-        <div className="card bg-white w-96 shadow-xl border border-stone-100 overflow-hidden h-150">
+        <div className="card bg-white w-96 shadow-xl border border-stone-100 overflow-hidden h-120">
             <figure className="h-48 shrink-0">
                 <img src={Logo} alt="Recipe Placeholder" className="object-cover w-full h-full" />
             </figure>
