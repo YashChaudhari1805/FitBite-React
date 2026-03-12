@@ -21,7 +21,6 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path='contact' element={<div>Coming Soon</div>} />
       <Route path='jobs' element={<div>Coming Soon</div>} />
       <Route path='diet' element={<div>Coming Soon</div>} />
-      <Route path='blog' element={<div>Coming Soon</div>} />
     </Route>
     <Route path='/auth' element={<Auth />}></Route>
   </>
