@@ -19,7 +19,7 @@ The project follows a modular component-based architecture to ensure the "inside
 * **`Header.jsx`**: Features a sticky navigation bar with DaisyUI components and a promotional top banner.
 * **`Hero.jsx`**: An engaging introduction section using CSS mix-blending to integrate brand imagery seamlessly.
 * **`Home.jsx`**: The main landing page orchestrating the Hero section and a dynamic pricing grid.
-* **`Card.jsx`**: A reusable sub-component used for displaying fitness plans with conditional rendering for "Popular" highlights and feature availability.
+* **`PriceCard.jsx`**: A reusable sub-component used for displaying fitness plans with conditional rendering for "Popular" highlights and feature availability.
 * **`Auth.jsx`**: A unified Login and Sign-Up component utilizing React's `useState` for smooth toggling between authentication modes.
 * **`Footer.jsx`**: A multi-column site footer organized by service, company, and legal categories.
 

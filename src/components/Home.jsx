@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from './Hero.jsx';
-import Card from './Card.jsx';
+import Card from './PriceCard.jsx';
 
 function Home() {
     return (
