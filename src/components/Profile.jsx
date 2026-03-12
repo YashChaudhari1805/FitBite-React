@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/logo.jpeg";
+import Pro from "../assets/Pro.png";
 
 function Profile() {
     const dummyUser = {
@@ -16,7 +16,7 @@ function Profile() {
             <div className="card card-side bg-white shadow-2xl max-w-2xl border border-stone-200 overflow-hidden">
                 <figure className="w-1/3 bg-stone-200">
                     <img
-                        src={Logo}
+                        src={Pro}
                         alt="User Subscription"
                         className="object-cover h-full"
                     />
