@@ -8,13 +8,13 @@ export const PLAN_RANK = { guest: 0, Basic: 1, Pro: 2, Ultimate: 3 }
 
 // Minimum plan required to visit each route path
 export const ROUTE_ACCESS = {
-  '/':          'guest',     // home — always visible
-  '/about':     'guest',     // about — always visible
-  '/auth':      'guest',     // auth page
-  '/recipes':   'Basic',     // need to be logged in
-  '/workouts':  'Basic',     // need to be logged in
-  '/diet':      'Pro',       // Pro and above
-  '/profile':   'Basic',     // need to be logged in
+  '/': 'guest',
+  '/about': 'guest',
+  '/auth': 'guest',
+  '/recipes': 'Basic',
+  '/workouts': 'Pro',
+  '/diet': 'Pro',
+  '/profile': 'Basic',
 }
 
 // Returns true if the user's plan meets the minimum required for a route

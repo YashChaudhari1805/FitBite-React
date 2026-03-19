@@ -1,49 +1,98 @@
-# FitBite-React 
+# FitBite — Frontend
 
-FitBite is a modern, responsive fitness and nutrition platform built to help users embrace a serene and healthy lifestyle. This project is a complete rewrite of a legacy PHP-based application, focused on clean architecture, component reusability, and a superior developer experience using React.
+A modern fitness and nutrition web app built with **React 19**, **Vite**, **Tailwind CSS 4** and **DaisyUI 5**.
 
 ## Tech Stack
 
-* **Frontend:** React 19
-* **Build Tool:** Vite
-* **Styling:** Tailwind CSS 4 & DaisyUI 5
-* **Icons/UI Components:** DaisyUI (Navigation, Footers, Buttons)
-* **Fonts:** Candara
+| Layer | Technology |
+|---|---|
+| Framework | React 19 |
+| Build Tool | Vite 7 |
+| Styling | Tailwind CSS 4 + DaisyUI 5 |
+| Routing | React Router DOM 7 |
+| HTTP Client | Axios |
+| Font | Candara |
+
+## Features
+
+- **Authentication** — Register and login with JWT. Session is restored automatically on page load.
+- **Subscription tiers** — Basic, Pro and Ultimate. Navigation and routes are gated by plan.
+- **Recipes** — Browse real recipes fetched from the database, filtered by category with pagination.
+- **Workout Tracker** — Log exercises against your profile. View and delete your history.
+- **Diet Tracking** — Live food search powered by the [Open Food Facts API](https://world.openfoodfacts.org/) (free, no key needed). Track daily calories and macros.
+- **Profile** — View and edit your stats (age, height, weight, goal). Profile image changes based on subscription tier.
+- **Pricing** — One-click subscription upgrade that updates your plan in the database instantly.
 
 ## Project Structure
 
-The project follows a modular component-based architecture to ensure the "inside" is as beautiful as the "outside":
-
-* **`App.jsx`**: Acts as the main Layout wrapper, containing the Header, Footer, and an Outlet for dynamic page content.
-* **`main.jsx`**: Configures the createBrowserRouter with top-level sibling routes for the main app and the Auth page.
-* **`Header.jsx`**: Features a sticky navigation bar with DaisyUI components and a promotional top banner.
-* **`Hero.jsx`**: An engaging introduction section using CSS mix-blending to integrate brand imagery seamlessly.
-* **`Home.jsx`**: The main landing page orchestrating the Hero section and a dynamic pricing grid.
-* **`PriceCard.jsx`**: A reusable sub-component used for displaying fitness plans with conditional rendering for "Popular" highlights and feature availability.
-* **`Auth.jsx`**: A unified Login and Sign-Up component utilizing React's `useState` for smooth toggling between authentication modes.
-* **`Footer.jsx`**: A multi-column site footer organized by service, company, and legal categories.
+```
+src/
+├── api/              # Axios API functions (auth, recipes, workouts, user)
+├── assets/           # Images — logo.jpeg, hero.png, Basic.png, Pro.png, Ultimate.png
+├── components/       # All page and UI components
+├── context/          # AuthContext — global auth state
+└── utils/            # subscriptionAccess.js — access control rules
+```
 
 ## Getting Started
 
 ### Prerequisites
-* Node.js 
-* npm 
-* react-router-dom
+
+- Node.js >= 20
+- The [FitBite backend](../fitbite-backend) running on port 3000
+
 ### Installation
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/yashchaudhari1805/fitbite-react.git](https://github.com/yashchaudhari1805/fitbite-react.git)
-2. Install Dependencies:
-   ```bash
-   npm i
-   npm i react-router-dom
-3. Start the Developement Server
-    ```bash
-    npm run dev
-    ```
 
-## Licence
-Made with ❤️ in Navi Mumbai
-## Yash Chaudhari
+```bash
+git clone https://github.com/yashchaudhari1805/fitbite-react.git
+cd fitbite-react
+npm install
+```
 
+### Environment Setup
 
+```bash
+cp .env.example .env.development
+```
+
+The default value (`VITE_API_URL=/fitbite`) works as-is for local development — Vite proxies it to the backend automatically.
+
+### Run Locally
+
+```bash
+npm run dev
+```
+
+Visit `http://localhost:5173`
+
+### Build for Production
+
+```bash
+cp .env.example .env.production
+# Edit .env.production — set VITE_API_URL to your deployed backend URL
+npm run build
+# Deploy the dist/ folder to Vercel, Netlify or Cloudflare Pages
+```
+
+## Subscription Access Rules
+
+| Page | Guest | Basic | Pro | Ultimate |
+|---|---|---|---|---|
+| Home | ✅ | ✅ | ✅ | ✅ |
+| About | ✅ | ✅ | ✅ | ✅ |
+| Recipes | 🔒 | ✅ | ✅ | ✅ |
+| Workout | 🔒 | 🔒 | ✅ | ✅ |
+| Profile | 🔒 | ✅ | ✅ | ✅ |
+| Diet Tracking | 🔒 | 🔒 | ✅ | ✅ |
+
+Access rules live in `src/utils/subscriptionAccess.js` — edit that file to change which plan unlocks which page.
+
+## Environment Variables
+
+| Variable | Description |
+|---|---|
+| `VITE_API_URL` | Base URL for all API calls. Use `/fitbite` locally, your backend URL in production. |
+
+---
+
+Made with ❤️ in Navi Mumbai — Yash Chaudhari
