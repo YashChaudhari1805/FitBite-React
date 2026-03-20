@@ -16,7 +16,7 @@ function Card({ title, price, features, buttonText, isPopular, planKey }) {
       const res = await updateSubscriptionAPI(planKey)
       // update context with new user data (re-use login helper to refresh user state)
       login(res.data.data, localStorage.getItem('accessToken'), localStorage.getItem('refreshToken'))
-      alert(`✅ Subscription updated to ${planKey}!`)
+      alert(`Subscription updated to ${planKey}!`)
     } catch {
       alert('Could not update subscription. Please try again.')
     } finally {
