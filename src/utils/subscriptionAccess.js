@@ -13,7 +13,7 @@ export const ROUTE_ACCESS = {
   '/auth': 'guest',
   '/recipes': 'Basic',
   '/workouts': 'Pro',
-  '/diet': 'Pro',
+  '/diet': 'Ultimate',
   '/profile': 'Basic',
 }
 
